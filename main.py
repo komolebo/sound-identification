@@ -10,6 +10,7 @@ def create_parser():
     p.add_argument('-l', '--load', nargs=2,
                    metavar=('url', 'dest'),
                    help='Load url content to hard disk')
+
     p.add_argument('-r', '--run', nargs=1,
                    metavar='filepath',
                    help='Run program for single wav file')
