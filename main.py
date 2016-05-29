@@ -20,7 +20,6 @@ def create_parser():
     p.add_argument('-t', '--test', nargs=1,
                    metavar='testingFolder',
                    help='Run program for directory')
-
     return p
 
 
