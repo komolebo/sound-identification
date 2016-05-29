@@ -107,4 +107,4 @@ def run_filters(name1, pattern='patterns/pattern.wav', watch=False):
 
 
 if __name__ == '__main__':
-    run_filters('patterns/gunshot_Valera.wav', watch=False)
+    run_filters('patterns/gunshot_v.wav', watch=False)
