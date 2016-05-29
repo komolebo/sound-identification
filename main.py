@@ -7,6 +7,7 @@ from load_script import load_site, start_test
 
 def create_parser():
     p = argparse.ArgumentParser()
+
     p.add_argument('-l', '--load', nargs=2,
                    metavar=('url', 'dest'),
                    help='Load url content to hard disk')
