@@ -1,7 +1,6 @@
 __author__ = 'oleh'
 
 import os
-import play_sound
 import urllib2
 from multiprocessing.dummy import Pool
 from filters import run_filters
@@ -86,7 +85,6 @@ def select_success(dir1, dir2):
         i += 1
         if i % 5 == 0:
             print str(100 * i / len(files)) + '%', 'done'
-    play_sound.play()
 
 
 def load_site(current_page, folder):
@@ -163,13 +161,15 @@ if __name__ == '__main__':
     # run_tests('sounds/scream')
     # run_tests('sounds/silence')
     # run_tests('sounds/street')
-    start_test('sounds/train')
+    # start_test('sounds/train')
     # run_tests('sounds/gun')
+    start_test('patterns')
+
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     #                           Point load
     # run_filters('other_wavs/320851_datruth555_gooo_converted.wav', watch=True)
     # run_filters('res/gunshot2_sim-7.wav', watch=True)
+    # run_filters('patterns/gunshot_two.wav', watch=True)
     # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    play_sound.play()
